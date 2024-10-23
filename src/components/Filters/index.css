@@ -1,0 +1,21 @@
+.filter-container {
+  width: 90%;
+  background-color: transparent;
+}
+.filter-container p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.filter-container label {
+  color: #f1f5f9;
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.filter-container ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}

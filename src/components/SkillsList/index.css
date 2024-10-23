@@ -1,0 +1,13 @@
+.list-container {
+  width: min(35%, 300px);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.list-container img {
+  width: 2rem;
+  margin-right: 10px;
+}
+.list-container p {
+  font-size: 0.8rem;
+}
