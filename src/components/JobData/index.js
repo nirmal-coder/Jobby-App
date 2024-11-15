@@ -70,7 +70,7 @@ class JobData extends Component {
       case status.searchNotFound:
         return this.noSearchResult()
       default:
-        return this.renderLoading()
+        return null
     }
   }
 }

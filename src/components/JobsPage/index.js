@@ -69,9 +69,7 @@ class JobsPage extends Component {
     const {employmentType, minimumPackage, search} = jobDataQueryList
     const emptype = employmentType.join()
     const jwtToken = Cookies.get('jwt_token')
-    const url = `https://apis.ccbp.in/jobs?employment_type=${
-      emptype || ''
-    }&minimum_package=${minimumPackage || ''}&search=${search || ''}`
+    const url = `https://apis.ccbp.in/jobs?employment_type=${emptype}&minimum_package=${minimumPackage}&search=${search}`
     const options = {
       method: 'GET',
       headers: {
@@ -79,9 +77,11 @@ class JobsPage extends Component {
       },
     }
     const response = await fetch(url, options)
+    console.log(response)
 
     if (response.ok === true) {
       const data = await response.json()
+      console.log(data)
       const {jobs} = data
       const updated = jobs.map(each => ({
         companyLogoUrl: each.company_logo_url,

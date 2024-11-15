@@ -228,7 +228,7 @@ class JobsItemDetails extends Component {
       case status.notFetched:
         return this.renderFailure()
       default:
-        return this.renderLoader()
+        return null
     }
   }
 }
